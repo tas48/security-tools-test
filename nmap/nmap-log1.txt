@@ -1,0 +1,45 @@
+========== RELATÓRIO NMAP ==========
+Alvo: scanme.nmap.org
+Comando executado: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -oX - -vvv --stats-every 1s -sV -O scanme.nmap.org
+Hora de início: 1733358863
+Hora de término: 1733358900
+Duração: 37.17 segundos
+
+========== HOST ==========
+Endereço IP: 45.33.32.156
+Status: up
+Hostname: scanme.nmap.org, scanme.nmap.org
+Sistema Operacional: Não detectado
+
+=== Portas e Serviços ===
+  Porta: 22/tcp
+  Serviço: ssh
+  Estado: open
+  Versão: product: OpenSSH version: 6.6.1p1 Ubuntu 2ubuntu2.13 extrainfo: Ubuntu Linux; protocol 2.0 ostype: Linux
+
+  Porta: 80/tcp
+  Serviço: http
+  Estado: open
+  Versão: product: Apache httpd version: 2.4.7 extrainfo: (Ubuntu)
+
+  Porta: 389/tcp
+  Serviço: ldap
+  Estado: filtered
+  Versão:
+
+  Porta: 1097/tcp
+  Serviço: sunclustermgr
+  Estado: filtered
+  Versão:
+
+  Porta: 9929/tcp
+  Serviço: nping-echo
+  Estado: open
+  Versão: product: Nping echo
+
+  Porta: 31337/tcp
+  Serviço: tcpwrapped
+  Estado: open
+  Versão:
+
+

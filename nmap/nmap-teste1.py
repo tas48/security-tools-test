@@ -1,24 +1,20 @@
 from libnmap.process import NmapProcess
 from libnmap.parser import NmapParser
 
-# Configura o alvo e os parâmetros de varredura
-target = "scanme.nmap.org"  # Substitua pelo IP ou domínio desejado
-options = "-sV -O"  # Varredura de serviços e detecção de SO
-
+target = "scanme.nmap.org"  # site de testes do nmap com portas abertas
+options = "-sV -O"  # flags pra varrer serviços nas portas e detectar o SO
 try:
-    # Inicia o processo do Nmap
+    # Inicia o processo do Nmap, instanciando ele
     nmap_proc = NmapProcess(targets=target, options=options)
     nmap_proc.run()
 
-    # Verifica se o Nmap executou com sucesso
     if nmap_proc.rc != 0:
         print(f"Erro ao executar o Nmap: {nmap_proc.stderr}")
         exit()
 
-    # Analisa os resultados
+
     report = NmapParser.parse(nmap_proc.stdout)
 
-    # Exibe as informações gerais do relatório
     print("========== RELATÓRIO NMAP ==========")
     print(f"Alvo: {target}")
     print(f"Comando executado: {report.commandline}")
@@ -26,7 +22,6 @@ try:
     print(f"Hora de término: {report.endtime}")
     print(f"Duração: {report.elapsed} segundos\n")
 
-    # Itera pelos hosts no relatório
     for host in report.hosts:
         print("========== HOST ==========")
         print(f"Endereço IP: {host.address}")
