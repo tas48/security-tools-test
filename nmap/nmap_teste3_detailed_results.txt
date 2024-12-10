@@ -1,0 +1,39 @@
+Relatórios Detalhados de Scans Nmap
+
+========== RELATÓRIO ==========
+Comando executado: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -oX - -vvv --stats-every 1s -sS -T4 --reason --open --version-intensity 5 scanme.nmap.org
+Hora de início: 1733848182
+Hora de término: 1733848190
+Duração: 8.42 segundos
+
+Endereço IP: 45.33.32.156
+Status: up
+Hostname: scanme.nmap.org, scanme.nmap.org
+Sistema Operacional: Não detectado
+  Porta: 22/tcp
+  Serviço: ssh
+  Estado: open
+  Versão: 
+  Porta: 80/tcp
+  Serviço: http
+  Estado: open
+  Versão: 
+  Porta: 9929/tcp
+  Serviço: nping-echo
+  Estado: open
+  Versão: 
+  Porta: 31337/tcp
+  Serviço: Elite
+  Estado: open
+  Versão: 
+
+========== RELATÓRIO ==========
+Comando executado: "C:\\Program Files (x86)\\Nmap\\nmap.exe" -oX - -vvv --stats-every 1s -sT -T4 --reason --version-all scanme.nmap.org
+Hora de início: 1733848192
+Hora de término: 1733848221
+Duração: 28.67 segundos
+
+Endereço IP: 45.33.32.156
+Status: up
+Hostname: scanme.nmap.org, scanme.nmap.org
+Sistema Operacional: Não detectado
